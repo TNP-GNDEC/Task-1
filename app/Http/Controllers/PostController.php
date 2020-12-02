@@ -15,9 +15,11 @@ class PostController extends Controller
      */
     public function index()
     {
-        
-        $posts=DB::select('select * from posts as p, tags as t, posts_tags as pt where p.id=pt.post_id and t.id=pt.tag_id');
-
+        //$posts = App\Models\Post::find(1);
+        $posts=Post::with('tags')->get();
+        //$posts->tags()->get();
+        //$posts=DB::select('select * from posts as p, tags as t, posts_tags as pt where p.id=pt.post_id and t.id=pt.tag_id');
+        //$tags = $posts->tags()->get();
         return response()->json($posts);
     }
 
