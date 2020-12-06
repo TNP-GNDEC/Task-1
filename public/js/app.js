@@ -16378,7 +16378,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "body{\r\n    background-color: #193b681a;\r\n}\r\n.navbarBg{\r\n    background-color: white;\r\n    padding-left: 4.5%;\r\n    color: #1470ff;\r\n    box-shadow:0px 0px 6px 4px rgba(0, 0, 0, 0.1);\r\n}\r\n.navUl{\r\n    padding-right: 4.5%;\r\n}\r\n.layout{\r\n    width: 100%;\r\n    display: flex;\r\n    justify-content: space-evenly;\r\n}\r\n.sidebar{\r\n    width: 17%;\r\n    padding-top: 2%;\r\n}\r\n\r\nh1{\r\n    font-family: \"Lato\";\r\n    color: #193b68;\r\n}\r\nh3{\r\n    font-family: 'Lato';\r\n    color: #1470ff;\r\n}\r\nh2{\r\n    font-family: \"Lato\";\r\n    color: #193b68;\r\n    text-transform: uppercase;\r\n}\r\nh5{\r\n    color: #193b68;\r\n    font-family: \"Lato\";\r\n}\r\nh6{\r\n    margin-top: 5px;\r\n    color: #000000bf;\r\n}\r\nhr{\r\n    border-top: 1px solid #00000040;\r\n}\r\n\r\n.actionBtn{\r\n    width: 100%;\r\n    margin-top: 20%;\r\n    display: block;\r\n}\r\n.unactive{\r\n    width: 100%;\r\n    height: 40px;\r\n    color: #1479ff;\r\n    opacity: 0.5;\r\n    border: 2px solid #1479ff8e;\r\n    border-radius: 5px;\r\n    text-decoration: none;\r\n    margin-top: 3%;\r\n}\r\n.active{\r\n    width: 100%;\r\n    height: 40px;\r\n    background-color: white;\r\n    color: #1470ff;\r\n    border: 2px solid #1470ff;\r\n    border-radius: 5px;\r\n    text-align: center;\r\n    justify-content: center;\r\n    margin-top: 3%;\r\n    box-shadow:0px 0px 6px 4px rgba(0, 0, 0, 0.1);\r\n}\r\n.active:hover, .unactive:hover{\r\n    color: #1470ff;\r\n    text-decoration: none;\r\n}\r\n.actionDiv{\r\n    width: 45%;\r\n    margin-top: 2%;\r\n}\r\n.Formdiv{\r\n    width: 100%;\r\n    background-color: white;\r\n    border-radius: 10px;\r\n    box-shadow:0px 0px 6px 4px rgba(0, 0, 0, 0.1);\r\n    padding: 20px;\r\n    margin-bottom: 2%;\r\n}\r\n.PostDiv{\r\n    width: 45%;\r\n    margin-top: 2%;\r\n}\r\nlabel{\r\n    color: #193b68;\r\n}\r\n.highlight{\r\n    border: 1px solid #1470ff;\r\n}\r\n.post{\r\n    width: 100%;\r\n    background-color: white;\r\n    padding: 15px;\r\n    border-radius: 10px;\r\n    box-shadow:0px 0px 6px 4px rgba(0, 0, 0, 0.1);\r\n    margin-bottom: 2%;\r\n}\r\n.primary{\r\n    width: 200px;\r\n    height: 40px;\r\n    border: none;\r\n    border-radius: 5px;\r\n    background-color: #1470ff;\r\n    box-shadow:0px 0px 6px 4px rgba(0, 0, 0, 0.1);\r\n    color: white;\r\n    text-align: center;\r\n    justify-content: center;\r\n}\r\n.secondary{\r\n    width: 200px;\r\n    height: 40px;\r\n    border: 2px solid #1470ff;\r\n    border-radius: 5px;\r\n    background-color: white;\r\n    box-shadow:0px 0px 6px 4px rgba(0, 0, 0, 0.1);\r\n    color: #1470ff;\r\n    text-align: center;\r\n    justify-content: center;\r\n}\r\n.secondary2{\r\n    width: 90px;\r\n    height: 40px;\r\n    border: none;\r\n    border-radius: 5px;\r\n    background-color: #1470ff1a;\r\n    box-shadow:0px 0px 3px 2px rgba(0, 0, 0, 0.1);\r\n    color: #1470ff;\r\n    text-align: center;\r\n    justify-content: center;\r\n    margin-left: 8px;\r\n}\r\n.end{\r\n    display: flex;\r\n    justify-content: space-between;\r\n}\r\n.action{\r\n    width: 200px;\r\n    height: 50px;\r\n}\r\n.icon{\r\n    margin: 0px 5px;\r\n}\r\n.divider{\r\n    width: 100%;\r\n    text-align: center;\r\n    margin: 5% 0;\r\n}\r\n.right-sidebar{\r\n    width: 20%;\r\n    margin-top: 2%;\r\n}\r\n.Greeting{\r\n    width: 100%;\r\n    background-color: white;\r\n    box-shadow:0px 0px 6px 4px rgba(0, 0, 0, 0.1);\r\n    border-radius: 10px;\r\n    border: 2px solid #1470ff;\r\n    padding: 20px;\r\n}\r\np{\r\n    color: #000000b3;\r\n}\r\n.subinfo{\r\n    display: flex;\r\n    justify-content: space-between;\r\n}", ""]);
+exports.push([module.i, "body{\r\n    background-color: #193b681a;\r\n}\r\n.navbarBg{\r\n    background-color: white;\r\n    padding-left: 4.5%;\r\n    color: #1470ff;\r\n    box-shadow:0px 0px 6px 4px rgba(0, 0, 0, 0.1);\r\n}\r\n.toggle_icon{\r\n    color: #1470ff;\r\n}\r\n.addlink{\r\n    display: none;\r\n}\r\n.navUl{\r\n    padding-right: 4.5%;\r\n}\r\n.layout{\r\n    width: 100%;\r\n    display: flex;\r\n    justify-content: space-evenly;\r\n}\r\n.sidebar{\r\n    width: 17%;\r\n    padding-top: 2%;\r\n}\r\n\r\nh1{\r\n    font-family: \"Lato\";\r\n    color: #193b68;\r\n}\r\nh3{\r\n    font-family: 'Lato';\r\n    color: #1470ff;\r\n}\r\nh2{\r\n    font-family: \"Lato\";\r\n    color: #193b68;\r\n    text-transform: uppercase;\r\n}\r\nh5{\r\n    color: #193b68;\r\n    font-family: \"Lato\";\r\n}\r\nh6{\r\n    margin-top: 5px;\r\n    color: #000000bf;\r\n}\r\nhr{\r\n    border-top: 1px solid #00000040;\r\n}\r\n\r\n.actionBtn{\r\n    width: 100%;\r\n    margin-top: 20%;\r\n    display: block;\r\n}\r\n.unactive{\r\n    width: 100%;\r\n    height: 40px;\r\n    color: #1479ff;\r\n    opacity: 0.5;\r\n    border: 2px solid #1479ff8e;\r\n    border-radius: 5px;\r\n    text-decoration: none;\r\n    margin-top: 3%;\r\n}\r\n.active{\r\n    width: 100%;\r\n    height: 40px;\r\n    background-color: white;\r\n    color: #1470ff;\r\n    border: 2px solid #1470ff;\r\n    border-radius: 5px;\r\n    text-align: center;\r\n    justify-content: center;\r\n    margin-top: 3%;\r\n    box-shadow:0px 0px 6px 4px rgba(0, 0, 0, 0.1);\r\n}\r\n.active:hover, .unactive:hover{\r\n    color: #1470ff;\r\n    text-decoration: none;\r\n}\r\n.actionDiv{\r\n    width: 45%;\r\n    margin-top: 2%;\r\n}\r\n.Formdiv{\r\n    width: 100%;\r\n    background-color: white;\r\n    border-radius: 10px;\r\n    box-shadow:0px 0px 6px 4px rgba(0, 0, 0, 0.1);\r\n    padding: 20px;\r\n    margin-bottom: 2%;\r\n}\r\n.PostDiv{\r\n    width: 45%;\r\n    margin-top: 2%;\r\n}\r\nlabel{\r\n    color: #193b68;\r\n}\r\n.highlight{\r\n    border: 1px solid #1470ff;\r\n}\r\n.post{\r\n    width: 100%;\r\n    background-color: white;\r\n    padding: 15px;\r\n    border-radius: 10px;\r\n    box-shadow:0px 0px 6px 4px rgba(0, 0, 0, 0.1);\r\n    margin-bottom: 2%;\r\n}\r\n.primary{\r\n    width: 200px;\r\n    height: 40px;\r\n    border: none;\r\n    border-radius: 5px;\r\n    background-color: #1470ff;\r\n    box-shadow:0px 0px 6px 4px rgba(0, 0, 0, 0.1);\r\n    color: white;\r\n    text-align: center;\r\n    justify-content: center;\r\n}\r\n.prim{\r\n    width: 95%;\r\n}\r\n.secondary{\r\n    width: 200px;\r\n    height: 40px;\r\n    border: 2px solid #1470ff;\r\n    border-radius: 5px;\r\n    background-color: white;\r\n    box-shadow:0px 0px 6px 4px rgba(0, 0, 0, 0.1);\r\n    color: #1470ff;\r\n    text-align: center;\r\n    justify-content: center;\r\n}\r\n.secondary2{\r\n    width: 90px;\r\n    height: 40px;\r\n    border: none;\r\n    border-radius: 5px;\r\n    background-color: #1470ff1a;\r\n    box-shadow:0px 0px 3px 2px rgba(0, 0, 0, 0.1);\r\n    color: #1470ff;\r\n    text-align: center;\r\n    justify-content: center;\r\n    margin-left: 8px;\r\n}\r\n.end{\r\n    display: flex;\r\n    justify-content: space-between;\r\n}\r\n.action{\r\n    width: 200px;\r\n    height: 50px;\r\n}\r\n.icon{\r\n    margin: 0px 5px;\r\n}\r\n.divider{\r\n    width: 100%;\r\n    text-align: center;\r\n    margin: 5% 0;\r\n}\r\n.right-sidebar{\r\n    width: 20%;\r\n    margin-top: 2%;\r\n}\r\n.Greeting{\r\n    width: 100%;\r\n    background-color: white;\r\n    box-shadow:0px 0px 6px 4px rgba(0, 0, 0, 0.1);\r\n    border-radius: 10px;\r\n    border: 2px solid #1470ff;\r\n    padding: 20px;\r\n}\r\np{\r\n    color: #000000b3;\r\n}\r\n.subinfo{\r\n    display: flex;\r\n    justify-content: space-between;\r\n}\r\n\r\n@media screen and (max-width:1000px){\r\n    .right-sidebar{\r\n        display: none;\r\n    }\r\n    .sidebar{\r\n        width: 25%;\r\n    }\r\n    .actionDiv, .PostDiv{\r\n        width: 65%;\r\n    }\r\n}\r\n\r\n@media screen and (max-width:900px){\r\n    .sidebar{\r\n        width: 20%;\r\n    }\r\n}\r\n\r\n@media screen and (max-width:760px){\r\n    .sidebar{\r\n        display: none;\r\n    }\r\n    .addlink{\r\n        display: block;\r\n    }\r\n    .actionDiv, .PostDiv{\r\n        width: 95%;\r\n    }\r\n}\r\n@media screen and (max-width:500px){\r\n    .end{\r\n        display: block;\r\n    }\r\n    .action{\r\n        padding-top: 10px;\r\n        width: 300px;\r\n    }\r\n    .primary, .secondary{\r\n        width: 300px;\r\n    }\r\n    .secondary2{\r\n        width: 140px;\r\n    }\r\n}\r\n@media screen and (max-width:450px){\r\n    .action{\r\n        width: 80%;\r\n    }\r\n    .primary, .secondary{\r\n        width: 80%;\r\n    }\r\n    .secondary2{\r\n        width: 40%;\r\n    }\r\n    .subinfo{\r\n        display: block;\r\n    }\r\n}", ""]);
 
 // exports
 
@@ -81858,7 +81858,7 @@ var EditPosts = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "Greeting"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Good Evening!!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", null, "Hello, Welcome Back!. And Have A Nice Day"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-        className: "primary"
+        className: "primary prim"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_5__["FontAwesomeIcon"], {
         icon: "calendar",
         className: "icon"
@@ -82294,7 +82294,7 @@ var createPosts = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "Greeting"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Good Evening!!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", null, "Hello, Welcome Back!. And Have A Nice Day"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-        className: "primary"
+        className: "primary prim"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_5__["FontAwesomeIcon"], {
         icon: "calendar",
         className: "icon"
@@ -82396,7 +82396,7 @@ var dashboard = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "Greeting"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Good Evening!!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "Hello, Welcome Back!. And Have A Nice Day"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "primary"
+        className: "primary prim"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
         icon: "calendar",
         className: "icon"
@@ -82448,7 +82448,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var navbar = function navbar() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
-    className: "navbar navbarBg"
+    className: "navbar navbarBg navbar-expand-lg"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "navbar-brand",
     to: "/"
@@ -82459,19 +82459,39 @@ var navbar = function navbar() {
     className: "d-inline-block align-top",
     alt: "",
     loading: "lazy"
-  }), "Training and Placement Cell"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    "class": "nav justify-content-end navUl"
+  }), "Training and Placement Cell"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "navbar-toggler",
+    type: "button",
+    "data-toggle": "collapse",
+    "data-target": "#navbarToggleDemo02"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "navbar-toggler-icon toggle_icon"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "collapse navbar-collapse",
+    id: "navbarToggleDemo02"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "navbar-nav ml-auto navUl"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    "class": "nav-item"
+    className: "nav-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    "class": "nav-link",
+    className: "nav-link",
     href: "#"
   }, "Login")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    "class": "nav-item"
+    className: "nav-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    "class": "nav-link",
+    className: "nav-link",
     href: "#"
-  }, "Register"))));
+  }, "Register")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "nav-item addlink"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "nav-link",
+    to: "/"
+  }, "Dashboard")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "nav-item addlink"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "nav-link",
+    to: "/addPosts"
+  }, "Create Post")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (navbar);
@@ -82507,8 +82527,8 @@ module.exports = "/images/logo.png?7815db646ca0534ab35486f8bcc24983";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\vikal\Desktop\my websites\crud\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\vikal\Desktop\my websites\crud\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\vikal\Desktop\my websites\Task-1\Task-1\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\vikal\Desktop\my websites\Task-1\Task-1\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

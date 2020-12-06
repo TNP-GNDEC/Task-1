@@ -7,6 +7,12 @@ body{
     color: #1470ff;
     box-shadow:0px 0px 6px 4px rgba(0, 0, 0, 0.1);
 }
+.toggle_icon{
+    color: #1470ff;
+}
+.addlink{
+    display: none;
+}
 .navUl{
     padding-right: 4.5%;
 }
@@ -117,6 +123,9 @@ label{
     text-align: center;
     justify-content: center;
 }
+.prim{
+    width: 95%;
+}
 .secondary{
     width: 200px;
     height: 40px;
@@ -174,4 +183,63 @@ p{
 .subinfo{
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width:1000px){
+    .right-sidebar{
+        display: none;
+    }
+    .sidebar{
+        width: 25%;
+    }
+    .actionDiv, .PostDiv{
+        width: 65%;
+    }
+}
+
+@media screen and (max-width:900px){
+    .sidebar{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:760px){
+    .sidebar{
+        display: none;
+    }
+    .addlink{
+        display: block;
+    }
+    .actionDiv, .PostDiv{
+        width: 95%;
+    }
+}
+@media screen and (max-width:500px){
+    .end{
+        display: block;
+    }
+    .action{
+        padding-top: 10px;
+        width: 300px;
+    }
+    .primary, .secondary{
+        width: 300px;
+    }
+    .secondary2{
+        width: 140px;
+    }
+}
+@media screen and (max-width:450px){
+    .action{
+        width: 80%;
+    }
+    .primary, .secondary{
+        width: 80%;
+    }
+    .secondary2{
+        width: 40%;
+    }
+    .subinfo{
+        display: block;
+    }
 }
