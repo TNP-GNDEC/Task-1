@@ -16,7 +16,7 @@ class PostController extends Controller
     public function index()
     {
         //$posts = App\Models\Post::find(1);
-        $posts=Post::with('tags')->get();
+        $posts=Post::with('tags')->orderBy('created_at', 'desc')->get();
         //$posts->tags()->get();
         //$posts=DB::select('select * from posts as p, tags as t, posts_tags as pt where p.id=pt.post_id and t.id=pt.tag_id');
         //$tags = $posts->tags()->get();
@@ -64,12 +64,9 @@ class PostController extends Controller
     public function update(Request $request, Post $post)
     {
         //
-        $request->validate([
-            'title' => 'required',
-            'description' => 'required' //optional if you want this to be required
-        ]);
-        $post->title = $request->title();
-        $post->description = $request->description();
+        
+        $post->title = $request->input('title');
+        $post->description = $request->input('description');
         $post->save();
         
         return response()->json([

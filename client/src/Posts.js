@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import { Header, Message } from 'semantic-ui-react';
 import { Card} from 'semantic-ui-react'
 import { Button } from 'semantic-ui-react'
-
 import { API_BASE_URL } from './config';
+import {Link, useLocation} from 'react-router-dom'
 export default class Posts extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
             posts: null,
-            isLoading: null
+            isLoading: null,
         };
         this.onDelete = this.onDelete.bind(this);
 
@@ -20,8 +20,12 @@ export default class Posts extends Component {
         this.getposts();
     }
 
+    getDate(date){
+        return date;
+    }
+ 
+
     async onDelete(id) {
-        console.log(id)
         const response = await fetch(API_BASE_URL + '/posts/' + id, {
             method: 'DELETE',
             headers: {
@@ -54,7 +58,7 @@ export default class Posts extends Component {
     }
 
     render() {
-
+       
         return (
             <div> 
                 <Header as="h1" color='teal' textAlign='center'>
@@ -70,15 +74,15 @@ export default class Posts extends Component {
                                 post =>
                                     <Card  color='teal' id={post.id} key={post.id} >
                                     <Card.Content textAlign="center" header={post.title} />
-                                    <Card.Content description={post.description} /> 
+                                    <Card.Content description={post.description+"\n"+new Date(post.created_at).toJSON().slice(0, 10)} /> 
                                         <Card.Content extra>{post.tags.map(
                                             tag=>
-                                               <a className="ui teal tag label">{tag.name} </a>)}
+                                               <p className="ui teal tag label right floated">{tag.name} </p>)}
                                                </Card.Content> 
                                                <Card.Content>
                                                <div className='ui two buttons'>
-                                                    <Button basic color='green'>Edit</Button>
-                                                    <Button onClick={()=>this.onDelete(post.id)} basic color='red'>Delete</Button> 
+                                                    <Button inverted onClick={()=>this.onDelete(post.id)} color='red'>DELETE</Button> 
+                                                    <Button inverted color='green' to={`edit/${post.id}`} as={Link} >EDIT POST</Button>
                                                         </div>
                                                     </Card.Content>
                                     </Card>

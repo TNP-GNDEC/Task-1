@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { Header, Button, Divider, Form, TextArea, Message, Segment } from 'semantic-ui-react'
 import { API_BASE_URL } from './config';
-import {Redirect} from 'react-router-dom';
-export default class PostForm extends Component {
+import { Redirect, useLocation } from "react-router-dom";
 
+export default class PostEditForm extends Component {
     constructor (props) {
         super(props);
         this.state = {
+            id: this.props.match.params.id,
             title: '',
             description: '',
             errorMessage: '',
@@ -17,7 +18,7 @@ export default class PostForm extends Component {
         this.handledescriptionChange = this.handledescriptionChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
     }
-
+   
     handletitleChange(e) {
         this.setState({
             title: e.target.value
@@ -38,17 +39,18 @@ export default class PostForm extends Component {
             errorMessage: ''
         });
 
-        const response = await fetch(API_BASE_URL + '/posts', {
-            method: 'POST',
+        const response = await fetch(API_BASE_URL + '/posts/' + this.state.id, {
+            method: 'PUT',
             headers: {
-                'Content-Type':'application/json',
-            },
+            'Content-type' : 'application/json; charset=UTF-8'
+                },
             body: JSON.stringify({
                 "title": this.state.title,
                 "description": this.state.description
             })
         });
-        const Post = await response.json().then(this.props.history.push('/'));
+        const Post = await response.json()
+        .then( this.props.history.push('/'));
 
         if (Post.errors) {
             this.setState({
@@ -69,25 +71,24 @@ export default class PostForm extends Component {
 
 
     render() {
-        console.log(this.props)
+        console.log()
         return (
             <div className="container">
                <Header as="h1" color='teal' textAlign='center'>
                 <Header.Content>
-                    ADD A POST
+                    EDIT POST 
                 </Header.Content>
                 </Header>
-                
                 <div class="ui column center page grid">
                 <div class="six wide column"></div>
-                <Form class="ui wide column form" error={this.state.error} onSubmit={this.onSubmit}>
+            <Form error={this.state.error} onSubmit={this.onSubmit}>
                 <Form.Field error={this.state.error}>
                 <label>Post title:</label>
                     <input placeholder='enter Post title' value={this.state.title} onChange={this.handletitleChange}/>
                 { this.state.error &&
                 <Message
                     error
-                    header='Error creating Post'
+                    header='Error editing the Post'
                     content={this.state.errorMessage}
                 />
                 } 
@@ -102,19 +103,18 @@ export default class PostForm extends Component {
             { this.state.error &&
             <Message
                 error
-                header='Error creating Post'
+                header='Error editing Post'
                 content={this.state.errorMessage}
             />
             }
                 <Segment basic textAlign={"center"}>
-                <Button textAlign='center' inverted color='teal' type='submit' loading={this.state.isLoading}>Add Post</Button>
+                <Button textAlign='center' inverted color='teal' type='submit' loading={this.state.isLoading}>UPDATE Post</Button>
         </Segment>
                 
                 </Form.Field>
             </Form>
-   </div>
-</div>
-
+            </div>
+            </div>
         )
     }
 };

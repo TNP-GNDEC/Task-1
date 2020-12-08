@@ -1,6 +1,8 @@
 import Navbar from './Navbar';
 import PostForm from './PostForm';
 import Posts from './Posts';
+import PostEditForm from './PostEdit';
+
 import {BrowserRouter as Router, Route} from "react-router-dom"
 function App() {
   return (
@@ -12,10 +14,15 @@ function App() {
       exact render={()=>
       <Posts/>}
       />
-      <Route 
+      <Route
       path='/add'
-      exact render={()=>
-      <PostForm/>}/>
+      exact render={(props)=>
+      <PostForm {...props} />}
+      />
+      <Route 
+      path='/edit/:id'
+      exact render={(props) =>
+      <PostEditForm {...props}/>}/>
       </Router>
       
     </div>
