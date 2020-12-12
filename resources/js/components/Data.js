@@ -1,4 +1,5 @@
 import React from "react";
+import moment from "moment";
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
@@ -14,7 +15,9 @@ class Data extends React.Component {
                 <div className="cardHeader">
                     <h2>{posts.title}</h2>
                     <div className="subinfo">
-                        <h6><FontAwesomeIcon icon="calendar" className="icon"/>{posts.updated_at}</h6>
+                        <h6><FontAwesomeIcon icon="calendar" className="icon"/>
+                            {moment(posts.updated_at).format('LLL')}
+                        </h6>
                         <h6><FontAwesomeIcon icon="flag" className="icon"/>{posts.type}</h6>
                     </div>
                 </div>

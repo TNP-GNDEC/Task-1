@@ -17,10 +17,10 @@ const navbar = () => {
             <div className="collapse navbar-collapse" id="navbarToggleDemo02">
                 <ul className="navbar-nav ml-auto navUl">
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Login</a>
+                        <a className="nav-link" href="#">About</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Register</a>
+                        <a className="nav-link" href="#">Login</a>
                     </li>
                     <li className="nav-item addlink">
                         <Link className="nav-link" to="/">Dashboard</Link>
